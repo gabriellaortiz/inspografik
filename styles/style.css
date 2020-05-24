@@ -88,17 +88,10 @@ p {
 
 
 @font-face {
-  font-family: UniversStd;
-  src: url(../assets/UniversLTStd.otf);
+  font-family: inspografik;
+  src: url(../assets/FrankfurterStd.otf);
 }
-@font-face {
-  font-family: UniversBold;
-  src: url(../assets/UniversLTStd-Bold.otf);
-}
-@font-face {
-  font-family: UniversLight;
-  src: url(../assets/UniversLTStd-Light.otf);
-}
+
 
 p {
   font-family: UniversStd;
@@ -107,7 +100,7 @@ p {
 }
 
 h1 {
-  font-family: UniversBold;
+  font-family: inspografik;
   font-size: 24px;
 }
 
