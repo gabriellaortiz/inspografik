@@ -1,13 +1,18 @@
 .splash {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border: 1px solid #0048FF;
-  margin: auto;
   width: 80%;
-  padding: 100px 0;
+  margin: auto;
+
 }
+
+  
 
 .inside {
   margin: auto;
-  width: 60%;
+  width: 80%;
 }
 
 @media all and (max-width:800px)
@@ -48,11 +53,6 @@ ul {
   }
 
 
-p {
-  max-width: 400px;
-/*  line-height: 1.5em;
-*/  text-align: justify;
-}
 
 .row {
   padding-top: 40px;
@@ -113,14 +113,14 @@ p {
 
 p {
   font-family: UniversStd;
-  font-size: 14px;
+  font-size: 25px;
   text-align: justify;
 }
 
 h1 {
   font-family: inspografik;
   color: #0048FF;
-  font-size: 24px;
+  font-size: 40px;
 }
 
 h2 {
@@ -261,11 +261,7 @@ a:visited {
   src: url(../assets/UniversLTStd-Light.otf);
 }
 
-p {
-  font-family: UniversStd;
-  font-size: 14px;
-  text-align: justify;
-}
+
 
 
 h2 {
