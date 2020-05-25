@@ -1,3 +1,10 @@
+body {
+  display: grid;
+  height: 100vh;
+  margin: 0;
+  place-items: center center;
+}
+
 .splash {
   display: flex;
   justify-content: center;
@@ -8,7 +15,6 @@
 
 }
 
-  
 
 .inside {
   margin: auto;
@@ -30,34 +36,8 @@
     .left{
       margin-right: 0 !important;
     }
-
-    div.workImages img {
-      padding-top: 20px;
-      width: 250px; 
-  }
-  .navbar_pad {
-    padding: 10px;
-  }
-  section.image-row {
-    margin: auto;
-    width: 50%;
-  }
-
-  img.inspo-image {
-    width: 100%;
-  }
 }
 
-ul {
-  list-style: none;
-  }
-
-
-
-.row {
-  padding-top: 40px;
-  padding-bottom: 40px;
-}
 
 
 /* Main content */
@@ -110,17 +90,30 @@ ul {
   src: url(../assets/FrankfurterStd.otf);
 }
 
+@font-face {
+  font-family: UniversStd;
+  src: url(../assets/UniversLTStd.otf);
+}
+@font-face {
+  font-family: UniversBold;
+  src: url(../assets/UniversLTStd-Bold.otf);
+}
+@font-face {
+  font-family: UniversLight;
+  src: url(../assets/UniversLTStd-Light.otf);
+}
+
 
 p {
   font-family: UniversStd;
-  font-size: 25px;
+  font-size: 2vw;
   text-align: justify;
 }
 
 h1 {
   font-family: inspografik;
   color: #0048FF;
-  font-size: 40px;
+  font-size: 4vw;
 }
 
 h2 {
@@ -130,7 +123,10 @@ h2 {
 
 a {
   font-family: UniversStd;
-  font-size: 14px;
+  font-size: 2vw;
+  text-align: justify;
+  color: #0048FF;
+  text-decoration: none;
 }
 
 .caption {
@@ -155,7 +151,7 @@ div.workImages img {
 }
 
 
-a.about-link:hover {
+a:hover {
   text-decoration: underline !important;
 }
 
@@ -213,7 +209,7 @@ a.about-link:hover {
   margin-left: 10px;
   text-align: center;
 }*/
-
+/*
 .left {
   margin-right: 10px;
 }
@@ -223,13 +219,12 @@ a.about-link:hover {
 .center {
   margin-right: 10px;
   margin-left: 10px;
-}
+}*/
 
 
-.work-right {
-  margin-left: 10px;
-  flex: 1;
-}
+
+
+
 
 
 .img_post-index {
@@ -245,93 +240,6 @@ a.about-link:hover {
 }
 
 a:visited { 
-  color: black;
-}
-
-@font-face {
-  font-family: UniversStd;
-  src: url(../assets/UniversLTStd.otf);
-}
-@font-face {
-  font-family: UniversBold;
-  src: url(../assets/UniversLTStd-Bold.otf);
-}
-@font-face {
-  font-family: UniversLight;
-  src: url(../assets/UniversLTStd-Light.otf);
-}
-
-
-
-
-h2 {
-  font-family: UniversBold;
-  font-size: 18px;
-}
-
-p a {
-  font-family: UniversStd;
-  font-size: 14px;
-}
-
-
-.right-caption {
-  font-family: UniversLight;
-  font-size: 11px;
-  text-transform: uppercase;
-  text-align: right;
-}
-
-.left-caption {
-  font-family: UniversLight;
-  font-size: 11px;
-  text-transform: uppercase;
-  text-align: left;
-}
-
-.center-caption {
-  font-family: UniversLight;
-  font-size: 11px;
-  text-transform: uppercase;
-  text-align: center;
-}
-
-.caption {
-  font-family: UniversLight;
-  font-size: 11px;
-  text-transform: uppercase;
-}
-
-.case-study {
-  width: 100%;
-}
-
-.inspo-image {
-  width: 70%;
-}
-
-.work-image-small {
-  width: 70%;
-}
-
-.work-image {
-  width: 100%;
-}
-
-/*.image-row {
-  text-align: center;
-}
-*/
-.image-row, .image-row-right {
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-
-.image-row-right {
-  text-align: right;
-}
-
-.align-right {
-  margin-right: 0px;
+  color: #0048FF;
 }
 
