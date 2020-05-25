@@ -1,21 +1,57 @@
-.iteration-text {
-  min-height: 210px;
+.splash {
+  border: 1px solid #0048FF;
+  margin: auto;
+  width: 80%;
+  padding: 100px 0;
 }
 
-section.intro {
+.inside {
   margin: auto;
-  width: 50%;
+  width: 60%;
 }
 
-section.conclusion {
-  margin: auto;
-  width: 50%;
+@media all and (max-width:800px)
+{
+    .row {
+      display: block !important;
+    }
+    .right{
+      margin-left: 0 !important;
+
+    }
+    #services {
+      padding-top: 20px;
+    }
+    .left{
+      margin-right: 0 !important;
+    }
+
+    div.workImages img {
+      padding-top: 20px;
+      width: 250px; 
+  }
+  .navbar_pad {
+    padding: 10px;
+  }
+  section.image-row {
+    margin: auto;
+    width: 50%;
+  }
+
+  img.inspo-image {
+    width: 100%;
+  }
 }
+
+ul {
+  list-style: none;
+  }
+
 
 p {
   max-width: 400px;
-  line-height: 1.5em;
-  text-align: justify;
+/*  line-height: 1.5em;
+*/  text-align: justify;
 }
 
 .row {
@@ -43,8 +79,8 @@ p {
 /*section {
     border: 10px dotted green;
     min-height: 300px;
-}*/
-
+}
+*/
 .row {
 /*  border: 5px dotted orange;
 */  display: flex;
@@ -66,25 +102,7 @@ p {
   margin-left: 10px;
 }
 
-.img_post {
-  width: 20%;
-  padding: 20px;  
-/*  transform: rotate(random);
-*/}
 
-
-/*.image_box {
-  padding: 20px;  
-}*/
-
-/*.img_post:hover {
-  box-shadow: 4px 4px 6px rgba(0,0,0,.1);
-}
-
-
-.img_post ui-draggable ui-draggable-handle img {
-  transition: box-shadow .1s ease-out;
-}*/
 
 
 @font-face {
@@ -121,62 +139,10 @@ a {
   text-transform: uppercase;
 }
 
-.case-study {
-  width: 100%;
-}
-
-
-.right-small {
-
-}
 
 
 
-@media all and (max-width:800px)
-{
-    .row {
-      display: block !important;
-    }
-    div#workRight.right{
-      margin: 0 !important;
 
-    }
-    div.workImages img {
-      padding-top: 20px;
-      width: 250px; 
-  }
-  .navbar_pad {
-    padding: 10px;
-  }
-  section.image-row {
-    margin: auto;
-    width: 50%;
-  }
-
-  img.inspo-image {
-    width: 100%;
-  }
-}
-
-
-ul.workList {
-  padding-left: 0;
-}
-
-ul.workList a{
-  color: #000000;
-  text-decoration: none;
-  font-size: 14px;
-  font-family: UniversStd;
-}
-
-ul.workList a:hover {
-  text-decoration: underline;
-}
-
-.workList {
-  list-style-type: none;
-}
 
 /* MAX HEIGHT DEPENDS ON WRAPPER LENGTH? WAS PREVIOUSLY 600*/
 div.workImages img {
@@ -188,16 +154,6 @@ div.workImages img {
   min-height: 210px;
 }
 
-section.intro {
-  margin: auto;
-  width: 50%;
-  text-align: justify;
-}
-
-section.conclusion {
-  margin: auto;
-  width: 50%;
-}
 
 a.about-link:hover {
   text-decoration: underline !important;
@@ -311,10 +267,6 @@ p {
   text-align: justify;
 }
 
-h1 {
-  font-family: UniversBold;
-  font-size: 24px;
-}
 
 h2 {
   font-family: UniversBold;
