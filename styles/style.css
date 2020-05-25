@@ -36,6 +36,16 @@ body {
     .left{
       margin-right: 0 !important;
     }
+
+    p {
+      font-size: 4vw !important;
+    }
+    a {
+      font-size: 4vw !important;
+    }
+    h1 {
+      font-size: 6vw !important;
+}
 }
 
 
@@ -108,12 +118,15 @@ p {
   font-family: UniversStd;
   font-size: 2vw;
   text-align: justify;
+  line-height: 50%;
 }
 
 h1 {
   font-family: inspografik;
   color: #0048FF;
   font-size: 4vw;
+  line-height: 50%;
+
 }
 
 h2 {
@@ -155,12 +168,7 @@ a:hover {
   text-decoration: underline !important;
 }
 
-#about {
-  font-family: UniversStd;
-  font-size: 14px;
-  line-height: 1.5em;
-  text-align: justify;
-}
+
 
 
 .row {
@@ -169,57 +177,12 @@ a:hover {
   display: flex;
 }
 
-/* Main content */
-.main {
-  margin-top: 30px; /* Add a top margin to avoid content overlay */
-}
-
-.wrap {
-/*  border: 10px dotted red;
-*/  
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.weblog {
-  overflow: hidden; 
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.conclusion {
-  padding-bottom: 40px;
-}
 
 .left, .right, .center {
 /*  border: 5px dotted purple;
 */  flex: 1;
 }
-/*
-.left {
-  margin-right: 10px;
-  text-align: left;
-}
-.right {
-  margin-left: 10px;
-  text-align: right;
-}
-.center {
-  margin-right: 10px;
-  margin-left: 10px;
-  text-align: center;
-}*/
-/*
-.left {
-  margin-right: 10px;
-}
-.right {
-  margin-left: 10px;
-}
-.center {
-  margin-right: 10px;
-  margin-left: 10px;
-}*/
+
 
 
 
