@@ -96,6 +96,12 @@
     }
 
     @media only screen and (max-width: 750px) {
+        html {
+        overflow: hidden;
+        }
+        h1 {
+            font-size:45px
+        }
         body {
             font-size:18px
         }
@@ -173,6 +179,12 @@
     }
 
     @media only screen and (max-width: 750px) {
+        html {
+        overflow: hidden;
+        }
+        h1 {
+            font-size:45px
+        }
         .view-home {
             padding-right: 25px;
             padding-left:25px
@@ -233,6 +245,9 @@
 
 
     @media only screen and (max-width: 750px) {
+        html {
+        overflow: hidden;
+        }
         footer {
             padding:25px
         }
