@@ -1,0 +1,75 @@
+/* Main content */
+.main {
+  margin-top: 30px; /* Add a top margin to avoid content overlay */
+}
+
+.wrap {
+/*  border: 10px dotted red;
+*/  
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.conclusion {
+  padding-bottom: 40px;
+}
+
+.left, .right, .center {
+/*  border: 5px dotted purple;
+*/  flex: 1;
+}
+
+.left {
+  margin-right: 10px;
+/*  text-align: left;
+*/}
+.right {
+  margin-left: 10px;
+/*  text-align: right;
+*/}
+.center {
+  margin-right: 10px;
+  margin-left: 10px;
+/*  text-align: center;
+*/}
+
+.img_post {
+  width: 20%;
+}
+
+
+
+.img_post img:hover {
+  box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.case-study {
+  width: 100%;
+}
+
+.inspo-image {
+  width: 70%;
+}
+
+.work-image-small {
+  width: 70%;
+}
+
+.work-image {
+  width: 100%;
+}
+
+
+.image-row, .image-row-right {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.image-row-right {
+  text-align: right;
+}
+
+.align-right {
+  margin-right: 0px;
+}
