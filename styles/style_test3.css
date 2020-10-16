@@ -157,20 +157,20 @@
         display: inline-block;
         margin-right:10px
     }
-
+/*
     .view-home .bodyinfo li::after {
         content: ','
-    }
+    }*/
 
     .view-home .bodyinfo li.title::after, .view-home .bodyinfo li:last-child::after {
         display:none
     }
 
 /*    .view-home .bodyinfo .title h3::before {
-        content: '—';
+        content: '*';
         margin-right:10px
-    }*/
-
+    }
+*/
     .view-home .bodyinfo h3 {
         display: inline-block;
         /*full size*/        
@@ -229,10 +229,6 @@
 
     footer .col-1 li:last-child::after {
         content: ''
-    }
-
-    footer .col-1 ul::before {
-        content: '\21B3'
     }
 
     footer .col-2 p {
