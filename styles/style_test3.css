@@ -1,7 +1,7 @@
     html {
-        overflow: hidden !important;
+        overflow: hidden;
     }
-    
+
     @font-face {
       font-family: inspografik;
       src: url(../assets/FrankfurterStd.otf);
@@ -11,6 +11,8 @@
     font-family: UniversStd;
     src: url(../assets/UniversLTStd.otf);
     }
+
+
 
     body {
         margin: 0;
