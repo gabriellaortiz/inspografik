@@ -1,0 +1,55 @@
+/* Full page background container for Tumblr images */
+#weblog {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden; /* hide overflowing images */
+    z-index: 0;       /* behind content */
+}
+
+.img_post {
+    transition: transform 0.2s ease;
+}
+
+.img_post:hover {
+    transform: scale(1.05);
+    box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+}
+
+/* Ensure content sits on top */
+.container {
+    position: relative;
+    z-index: 10;
+}
+
+/* Optional: other page styles */
+.main {
+    margin-top: 30px;
+}
+
+.left, .right, .center {
+    flex: 1;
+}
+
+.left { margin-right: 10px; }
+.right { margin-left: 10px; }
+.center { margin: 0 10px; }
+
+.case-study { width: 100%; }
+.inspo-image, .work-image-small { width: 70%; }
+.work-image { width: 100%; }
+
+.image-row, .image-row-right { padding: 20px 0; }
+.image-row-right { text-align: right; }
+.align-right { margin-right: 0; }
+
+/* Responsive for smaller screens */
+@media (max-width: 768px) {
+    .img_post { max-width: 150px; }
+}
+
+@media (max-width: 480px) {
+    .img_post { max-width: 100px; }
+}
