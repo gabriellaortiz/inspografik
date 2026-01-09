@@ -200,17 +200,16 @@ button {
    Footer
 ----------------------------------- */
 footer {
-    position: absolute; /* keep it absolute as before */
-    bottom: env(safe-area-inset-bottom, 0); /* iPhone safe area added */
-    left: 0;
-    right: 0;
-    padding: 30px;       /* same as before */
-    z-index: 10;         /* keep above background images */
     text-transform: uppercase;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    background: transparent; /* unchanged */
+    position: absolute;
+    margin: auto;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    padding: 30px;
 }
-
 
 footer .col-1 li,
 footer .col-1 p,
@@ -281,4 +280,8 @@ footer .col-3 p {
     #weblog img.img_post {
         max-width: 100px;
     }
+    footer {
+        padding-bottom: calc(30px + env(safe-area-inset-bottom));
+    }
+}
 }
