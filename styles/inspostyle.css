@@ -203,9 +203,9 @@ footer {
     text-transform: uppercase;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    position: absolute;
+    position: fixed;  /* changed from absolute */
+    bottom: env(safe-area-inset-bottom, 0);
     margin: auto;
-    bottom: 0;
     right: 0;
     left: 0;
     padding: 30px;
