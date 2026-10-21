@@ -1,27 +1,54 @@
+
 function fetchLatestTumblrImages() {
-    $.getJSON("https://inspografik.tumblr.com/api/read/json?type=photo&num=30&callback=?", function(data) {
-        $.each(data.posts, function(i, postData) {
-            if (postData.type === "photo") {
+    $.getJSON(
+        "https://inspografik-feed.gabriella-14a.workers.dev/",
+        function(data) {
+            $.each(data.photos || [], function(i, photoUrl) {
+
                 // Create image element
                 var img = $("<img>", {
                     class: "img_post",
-                    src: postData["photo-url-1280"]
+                    src: photoUrl
                 });
 
                 // Random position within viewport
-                var maxX = $(window).width() - 200;   // adjust 200 for image width buffer
-                var maxY = $(window).height() - 200;
-                var randomX = Math.floor(Math.random() * maxX);
-                var randomY = Math.floor(Math.random() * maxY);
+                var maxX = Math.max(
+                    0,
+                    $(window).width() - 200
+                );
 
-                img.css({ top: randomY + "px", left: randomX + "px" });
+                var maxY = Math.max(
+                    0,
+                    $(window).height() - 200
+                );
+
+                var randomX = Math.floor(
+                    Math.random() * (maxX + 1)
+                );
+
+                var randomY = Math.floor(
+                    Math.random() * (maxY + 1)
+                );
+
+                img.css({
+                    top: randomY + "px",
+                    left: randomX + "px"
+                });
 
                 // Append to #weblog
                 $("#weblog").append(img);
 
                 // Make draggable
-                img.draggable({ stack: "img" });
-            }
-        });
+                img.draggable({
+                    stack: "img"
+                });
+            });
+        }
+    ).fail(function(jqXHR, textStatus, errorThrown) {
+        console.error(
+            "Unable to load Inspografik Tumblr photos:",
+            textStatus,
+            errorThrown
+        );
     });
 }
